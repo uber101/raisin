@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateInputBox() {
+            var x = document.querySelector('.input_box input').value;
+            if (x == "Key") {
+                // redirect to the cipher2.html
+                window.location.href = "final.html";
+            } else {
+                alert("Wrong password");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter the key-phrase</h1>
+    <!-- make a text input box -->
+    <div class="input_box">
+        <input type="text" name="key" placeholder="Key-phrase">
+    </div>
+    <div class="submit_btn">
+        <!-- on click validateForm() -->
+        <input type="submit" value="Submit" onclick="validateInputBox()">
+    </div>
+    <div class="cipher_text">
+        <h2>Where oriental spices meet the numbers lies your first clue</h2>
+        <h2>Second Clue:</h2>
+        <p>Carly Rae Jepsen?</p>
+        <p>Lone digit remains,</p>
+        <p>In the dial's final embrace,</p>
+        <p>Connects us in peace</p>   
+        <h2>Third Clue:</h2>
+        <p>I came before I knew you well,</p>
+        <p>Where red letters three, secrets dwell.</p>
+        <p>Beneath them lies the cipher's grace,</p>
+        <p>In this enigmatic place.</p>
+        <p>
+            Three numbers, when combined, create some fun, 
+            Yet take away just one, and I'll be done. 
+            A classic game, in squares and rows you'll find, 
+            What am I, to challenge your creative mind?
+        </p>
+        <h2>
+            Numbers and letters, they intertwine, Return to ABCs, let your knowledge align. An easy cipher, as simple as can be, Connect the dots and you'll soon go free.
+        </h2>
+    </div>
+</body>

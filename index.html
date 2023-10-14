@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateInputBox() {
+            var x = document.querySelector('.input_box input').value;
+            if (x == "He is not who you think he is") {
+                // redirect to the cipher2.html
+                window.location.href = "cipher2.html";
+            } else {
+                alert("Wrong key-phrase");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter the key-phrase</h1>
+    <!-- make a text input box -->
+    <div class="input_box">
+        <input type="text" name="key" placeholder="Key-phrase">
+    </div>
+    <div class="submit_btn">
+        <!-- on click validateForm() -->
+        <input type="submit" value="Submit" onclick="validateInputBox()">
+    </div>
+</body>
